@@ -4,8 +4,7 @@ import { useExerciseHistory } from '@/hooks/useExerciseHistory';
 
 export default function SettingsScreen() {
   const clearHistory = useExerciseHistory((state) => state.clearHistory);
-  const [apiEndpoint, setApiEndpoint] = useState('https://us-central1-aiplatform.googleapis.com/v1/projects/neat-veld-455922-b5/locations/us-central1/endpoints/5329417522225610752:predict');
-  const [apiToken, setApiToken] = useState('ya29.a0AZYkNZhleS4I26P63SMM79DjGGvvqfmm0ayNr0MJVm-M6dpkq64oqlgg92xXm9Zu2oo9PgTGF6JUJ07moPIBl0MhXCTrZQeFXIih3h3mlqv6s96XUonIPJsykmN_IsKR9u7EbWxEi74vmZliXacUXzoZylpvLnGEPSFi5RmfVE3NKFGpTF9JbPO_t8M4_maFTfSIb0ihOrc5kHBjk3huSaMAT6aNVYBN_xZ9IMXXPi8b4tBRAlmzZ86_AY7SglAMfM3q4JKCJpCaQ376O1MVOifRLATWR8fnblkZtR1zIjxtFQS_4kBu4Av30DOOxfgYbSJTapYvWFSroPKj_5M3j0BqqZDYw2dXlgva2398txcELzYWXm-AcXqf43vVgI-evDFQ0VUWSQs98XcaRnIhkyRQTT6Pj8xQ_FC_CQaCgYKAYASARASFQHGX2Miyq-K0K039gUcwpocuLjV5g0429');
+  const [apiEndpoint, setApiEndpoint] = useState('AUTH_TOKEN');
 
   const handleSave = () => {
     // In a real app, you'd want to persist these values
